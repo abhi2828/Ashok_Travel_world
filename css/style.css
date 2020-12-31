@@ -1185,3 +1185,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .ImgColumn h6{
   margin-top: 20px;
 }
+.packagesImgResize{
+  height: 50%;
+}
