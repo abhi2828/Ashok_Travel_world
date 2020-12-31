@@ -9,7 +9,7 @@
 --------------------------------------------------------------*/
 html,body {
   background: #fff;
-  color: #666666;
+  color: #233d65;
   font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
@@ -1181,7 +1181,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*  new code */
-
+.packages h5{
+  font-weight: 600;
+}
 .ImgColumn h6{
   margin-top: 20px;
 }
