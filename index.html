@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ashok Travel World</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/fevicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div id="logo" class="pull-left">
+            <a href="#hero"><img src="img/logo.png" alt="" title=""/></img></a>
+          </div>
+    
+          
+        </div>
+        <div class="col-md-7">
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="menu-active"><a href="#hero"><i class="fa fa-plane" aria-hidden="true"></i> Flights</a></li>
+              <li><a href="#about"><i class="fa fa-bed" aria-hidden="true"></i> Hotel</a></li>
+              <li class="menu-has-children"><a href=""> <i class="fa fa-users" aria-hidden="true"></i> Holidays</a>
+                <ul class="drop-down mega-menu">
+                  <!-- <li ><a href="#">Drop Down 1</a></li>
+                  <li ><a href="#">Drop Down 2</a> </li>
+                  <li ><a href="#">Drop Down 3</a></li>
+                  <li ><a href="#">Drop Down 4</a></li>
+                  <li ><a href="#">Drop Down 5</a></li>
+                  <li ><a href="#">Drop Down 6</a></li> -->
+                 <div class="row">
+                    <div class="col-md-3">
+                      <li ><a href="#">Drop Down 1</a></li>
+                      <li ><a href="#">Drop Down 2</a> </li>
+                      <li ><a href="#">Drop Down 3</a></li>
+                      <li ><a href="#">Drop Down 4</a></li>
+                      <li ><a href="#">Drop Down 5</a></li>
+                      <li ><a href="#">Drop Down 6</a></li>
+                    </div>
+                 </div>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="row">
+            <div class="header_icon col-sx-3" style="margin-right: 22px;float: right;">
+             <i class="fa fa-sign-in" aria-hidden="true"></i><a href="#"> Login</a>
+             </div>
+            <div class="header_icon Sign_up col-sx-3" id="myModal">
+              <i class="fa fa-user-plus" style="padding-left:10px" aria-hidden="true" ></i><a href="#"> singn up</a>
+             </div>
+        </div>
+      </div>
+     
+<!-- modal code -->
+
+
+
+<!--  modal code ends -->
+    </div>
+  </header><!-- #header -->
+  <section class="sec1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 sec1Row1">
+          <h2 class="topSlogan">A Great way to Fly</h2>
+          <h2>Search for Flights</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="booking" class="">
+            <div class="section-center">
+              <div class="container">
+                <div class="row">
+                  <div class="booking-form">
+                    <form>
+                      <div class="form-group">
+                        <div class="form-checkbox">
+                           <label for="one-way">
+                            <input type="radio" id="one-way" name="flight-type" checked>
+                            <span></span>One way
+                          </label>
+                          <label for="roundtrip">
+                            <input type="radio" id="roundtrip" name="flight-type" >
+                            <span></span>Roundtrip
+                          </label>
+                          <label for="multi-city">
+                            <input type="radio" id="multi-city" name="flight-type">
+                            <span></span>Multi-City
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <span class="form-label">Flying from</span>
+                            <input class="form-control" type="text" placeholder="City or airport">
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <span class="form-label">Flyning to</span>
+                            <input class="form-control" type="text" placeholder="City or airport">
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <span class="form-label">Departing</span>
+                            <input class="form-control" type="date" required>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <span class="form-label">Returning</span>
+                            <input class="form-control" type="date" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        
+                        <div class="col-md-2">
+                          <div class="form-group">
+                            <span class="form-label">Adults (18+)</span>
+                            <select class="form-control">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="form-group">
+                            <span class="form-label">Children (0-17)</span>
+                            <select class="form-control">
+                              <option>0</option>
+                              <option>1</option>
+                              <option>2</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-group">
+                            <span class="form-label">Travel class</span>
+                            <select class="form-control">
+                              <option>Economy class</option>
+                              <option>Business class</option>
+                              <option>First class</option>
+                            </select>
+                            <span class="select-arrow"></span>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="form-btn">
+                            <button class="submit-btn">Show flights</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h5>OUR PACKAGES  </h5>
+          <!-- <span class="line5"></span> -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row">
+           <div class="col-md-4 col-sm-6 col-xs-12 ImgColumn">
+            <img class="packagesImg" src="./img/packages1.jpg" alt="packages1">
+            <h6>Indian Holidays</h6>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 ImgColumn">
+            <img class="packagesImg" src="./img/packages2.jpg" alt="packages2">
+            <h6>World Holidays</h6>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 ImgColumn">
+            <img class="packagesImg" src="./img/packages3.jpg" alt="packages3">
+            <h6> Histrical Packages</h6>
+          </div>
+        </div>
+        <div class="row" style="margin-top: -80px;">
+           <div class="col-md-4 col-sm-6 col-xs-12 ImgColumn">
+            <img class="packagesImg" src="./img/packages4.jpg" alt="packages4">
+            <h6>  Weekend Getaways</h6>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 ImgColumn">
+            <img class="packagesImg" src="./img/packages5.jpg" alt="packages5">
+            <h6>Religious Packages</h6>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 ImgColumn">
+            <img class="packagesImg" src="./img/packages6.jpg" alt="packages6">
+            <h6>Honeymoon Packages</h6>
+          </div>
+        </div>
+        
+    </div>
+    <BR><BR></BR></BR>
+    
+  
+  </section>
+  
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
