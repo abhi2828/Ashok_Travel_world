@@ -1,134 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <body>
-        <!-- Left to right-->
-<div class="row">
-    <div class="col-sm-6">
-   
-      <!-- normal -->
-      <div class="ih-item circle effect3 left_to_right"><a href="#">
-          <div class="img"><img src="images/assets/4.jpg" alt="img"></div>
-          <div class="info">
-            <h3>Heading here</h3>
-            <p>Description goes here</p>
-          </div></a></div>
-      <!-- end normal -->
-   
-    </div>
-    <div class="col-sm-6">
-   
-      <!-- colored -->
-      <div class="ih-item circle colored effect3 left_to_right"><a href="#">
-          <div class="img"><img src="images/assets/5.jpg" alt="img"></div>
-          <div class="info">
-            <h3>Heading here</h3>
-            <p>Description goes here</p>
-          </div></a></div>
-      <!-- end colored -->
-   
-    </div>
-  </div>
-  <!-- end Left to right-->
-   
-   
-  <!-- Right to left-->
-  <div class="row">
-    <div class="col-sm-6">
-   
-      <!-- normal -->
-      <div class="ih-item circle effect3 right_to_left"><a href="#">
-          <div class="img"><img src="images/assets/6.jpg" alt="img"></div>
-          <div class="info">
-            <h3>Heading here</h3>
-            <p>Description goes here</p>
-          </div></a></div>
-      <!-- end normal -->
-   
-    </div>
-    <div class="col-sm-6">
-   
-      <!-- colored -->
-      <div class="ih-item circle colored effect3 right_to_left"><a href="#">
-          <div class="img"><img src="images/assets/7.jpg" alt="img"></div>
-          <div class="info">
-            <h3>Heading here</h3>
-            <p>Description goes here</p>
-          </div></a></div>
-      <!-- end colored -->
-   
-    </div>
-  </div>
-  <!-- end Right to left-->
-   
-   
-  <!-- Bottom to top-->
-  <div class="row">
-    <div class="col-sm-6">
-   
-      <!-- normal -->
-      <div class="ih-item circle effect3 bottom_to_top"><a href="#">
-          <div class="img"><img src="images/assets/3.jpg" alt="img"></div>
-          <div class="info">
-            <h3>Heading here</h3>
-            <p>Description goes here</p>
-          </div></a></div>
-      <!-- end normal -->
-   
-    </div>
-    <div class="col-sm-6">
-   
-      <!-- colored -->
-      <div class="ih-item circle colored effect3 bottom_to_top"><a href="#">
-          <div class="img"><img src="images/assets/4.jpg" alt="img"></div>
-          <div class="info">
-            <h3>Heading here</h3>
-            <p>Description goes here</p>
-          </div></a></div>
-      <!-- end colored -->
-   
-    </div>
-  </div>
-  <!-- end Bottom to top-->
-   
-   
-  <!-- Top to bottom-->
-  <div class="row">
-    <div class="col-sm-6">
-   
-      <!-- normal -->
-      <div class="ih-item circle effect3 top_to_bottom"><a href="#">
-          <div class="img"><img src="../img/CircleImg-1.jpg" alt="img"></div>
-          <div class="info">
-            <h3>Heading here</h3>
-            <p>Description goes here</p>
-          </div></a></div>
-      <!-- end normal -->
-   
-    </div>
-    <div class="col-sm-6">
-   
-      <!-- colored -->
-      <div class="ih-item circle colored effect3 top_to_bottom"><a href="#">
-          <div class="img"><img src="../img/CircleImg-1.jpg" alt="img"></div>
-          <div class="info">
-            <h3>Heading here</h3>
-            <p>Description goes here</p>
-          </div></a></div>
-      <!-- end colored -->
-   
-    </div>
-  </div>
-  <!-- end Top to bottom-->
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+  
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+</head>
+<body>
+    <p><code>wrapAround: true</code></p>
+
+    <!-- Flickity HTML init -->
+    <div class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true }'>
+      <div class="gallery-cell">
+          <img src="../img/packages1.jpg" alt="">
+      </div>
+      <div class="gallery-cell">
+        <img src="../img/packages2.jpg" alt="">
+      </div>
+      <div class="gallery-cell">
+        <img src="../img/packages3.jpg" alt="">
+    </div>
+    <div class="gallery-cell">
+      <img src="../img/packages4.jpg" alt=""> 
+    </div>
+    </div>
 </body>
- 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 </html>
+<style>
+    * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.gallery {
+  background: #EEE;
+}
+img{
+    width: 500px;
+    height: 400px;
+}
+.gallery-cell {
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(gallery-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+</style>
