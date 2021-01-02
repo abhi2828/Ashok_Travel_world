@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px 0;
   height: 92px;
   position: fixed;
+  background-color: white;
   left: 0;
   top: 0;
   right: 0;
@@ -1393,3 +1394,6 @@ color: #878787;
 .flickity-viewport{
   height:250px;
 }
+
+/* pre loader */
+

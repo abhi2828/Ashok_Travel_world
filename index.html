@@ -19,11 +19,11 @@
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+  <script src="./lib/flickity.pkgd.js"></script>
   
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -50,20 +50,50 @@
             <ul class="nav-menu">
               <li class="menu-active"><a href="#hero"><i class="fa fa-plane" aria-hidden="true"></i> Flights</a></li>
               <li><a href="#about"><i class="fa fa-bed" aria-hidden="true"></i> Hotel</a></li>
-              <li class="menu-has-children"><a href=""> <i class="fa fa-users" aria-hidden="true"></i> Holidays</a>
-                <ul class="drop-down mega-menu">
-                 <div class="row">
-                    <div class="col-md-3">
-                      <li ><a href="#">Drop Down 1</a></li>
-                      <li ><a href="#">Drop Down 2</a> </li>
-                      <li ><a href="#">Drop Down 3</a></li>
-                      <li ><a href="#">Drop Down 4</a></li>
-                      <li ><a href="#">Drop Down 5</a></li>
-                      <li ><a href="#">Drop Down 6</a></li>
-                    </div>
-                 </div>
-                </ul>
-              </li>
+              <li class="nav-item px-4 dropdown">
+                <!-- first is the link in your navbar -->
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+          
+          <!-- your mega menu starts here! -->
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+          
+          <!-- the standard dropdown items --> 
+           <a class="dropdown-item" href="#">What we do</a>
+           <a class="dropdown-item" href="#">How we fit your needs</a>
+          
+          <!-- next, a divider to tidy things up -->
+           <div class="dropdown-divider"></div>
+          
+          <!-- finally, using flex to create your layout -->
+           <div class="d-md-flex align-items-start justify-content-start">
+            
+            <div>   
+             <div class="dropdown-header">Development</div>
+             <!-- <a class="dropdown-item" href="#">Bespoke software</a>
+             <a class="dropdown-item" href="#">Mobile apps</a>
+             <a class="dropdown-item" href="#">Websites</a> -->
+            </div>
+                                         
+            <div>
+             <div class="dropdown-header">Professional Services</div>
+             <!-- <a class="dropdown-item" href="#">Project rescue</a>
+             <a class="dropdown-item" href="#">Source code recovery</a>
+             <a class="dropdown-item" href="#">Application support &amp; maintenance</a> -->
+            </div>
+                                          
+            <div>
+             <div class="dropdown-header">Fixed Price Services</div>
+             <!-- <a class="dropdown-item" href="#">Add cookie consent</a>
+             <a class="dropdown-item" href="#">Add captcha</a>
+             <a class="dropdown-item" href="#">Add core data</a>
+             <a class="dropdown-item" href="#">Custom error pages</a>
+             <a class="dropdown-item" href="#">Contact form creation</a>
+             <a class="dropdown-item" href="#">Automated backups</a>
+             <a class="dropdown-item" href="#">Image to HTML</a> -->
+            </div>
+           </div>
+          </div>
+               </li>
             </ul>
           </nav>
         </div>
@@ -72,7 +102,8 @@
               <i class="fa fa-user-plus" style="padding-left:10px" aria-hidden="true" ></i><a href="#"> sign up</a>
              </div>
             <div class="header_icon Sign_up col-sx-3" id="myModal">
-              <i class="fa fa-sign-in" style="padding-left:10px" aria-hidden="true" ></i><a href="#"> log in</a>
+              <!-- <i class="fa fa-sign-in" style="padding-left:10px" aria-hidden="true" ></i> -->
+              <i class="fas fa-sign-in-alt"></i><a href="#"> log in</a>
              </div>
         </div>
       </div>
@@ -262,7 +293,7 @@
 </section>
 
 <!--  offer corosoule -->
-  <footer class="footer-section">
+  <!-- <footer class="footer-section">
     <div class="container">
         <div class="footer-cta pt-5 pb-5">
             <div class="row">
@@ -374,8 +405,11 @@
             </div>
         </div>
     </div>
-</footer> 
-  <!-- JavaScript Libraries -->
+</footer>  -->
+ 
+
+
+<!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
