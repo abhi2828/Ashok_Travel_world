@@ -491,7 +491,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Sections 1 
 --------------------------------------------------------------*/
 .sec1{
-  margin-top: -28%;
+  margin-top: -31%;
   padding-top: 36px;
  text-align: center;
  /* background-image: url(../img/bg3.jpg);  */
@@ -505,7 +505,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
  .topSlogan{
  font-weight: 900;
-
+ padding-top: 8px;
 }
 /* Sections Header
 --------------------------------*/
@@ -1034,3 +1034,12 @@ color: #878787;
   }
 
 }
+img.dowloadlink{
+  width: 90px;
+}
+.dowloadlink_heading h3::before{
+  left:122px !important;
+}
+.payment_option_icon {    
+      font-size: 30px;
+    }
