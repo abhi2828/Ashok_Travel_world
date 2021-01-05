@@ -27,6 +27,7 @@
     <style>
         .packages img {
             width: 100%;
+            border-radius: 40px;
         }
         
         .packages h6 {
@@ -66,18 +67,32 @@
                                 <li><a href="#about"><i class="fa fa-bed" aria-hidden="true"></i> Hotel</a></li>
                                 <li class="nav-item px-4 dropdown">
                                     <!-- first is the link in your navbar -->
-                                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Holidays</a>
 
                                     <!-- your mega menu starts here! -->
                                     <div class="dropdown-menu dropdown-menu-right container" aria-labelledby="servicesDropdown">
-                                        <div class="">
                                             <div class="row">
-                                                <div class="col-md-1">abhay</div>
-                                                <div class="col-md-2">abhay</div>
-                                                <div class="col-md-4">abhay</div>
-                                                <div class="col-md-5">abhay</div>
+                                                <ul class="col-md-3 megamenu_ul"><a href=""> Pineapple</a>                                       
+                                                    <li>item1</li>
+                                                    <li>item1</li>
+                                                    <li>item1</li>
+                                                </ul>
+                                                <ul class="col-md-3 megamenu_ul"><a href=""> Pineapple</a>
+                                                    <li>item1</li>
+                                                    <li>item1</li>
+                                                    <li>item1</li>
+                                                </ul>
+                                                <ul class="col-md-3 megamenu_ul"><a href=""> Pineapple</a>
+                                                    <li>item1</li>
+                                                    <li>item1</li>
+                                                    <li>item1</li>
+                                                </ul>
+                                                <ul class="col-md-3 megamenu_ul"><a href=""> Pineapple</a>
+                                                    <li>item1</li>
+                                                    <li>item1</li>
+                                                    <li>item1</li>
+                                                </ul>
                                             </div>
-                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -85,10 +100,10 @@
                     </div>
                     <div class="row">
                         <div class="header_icon col-sx-3" style="margin-right: 22px;float: right;">
-                            <i class="fa fa-user-plus" style="padding-left:10px" aria-hidden="true"></i><a href="#"> sign up</a>
+                            <i class="fa fa-user" style="padding-left:10px" aria-hidden="true"></i><a href="#"> Sign up</a>
                         </div>
                         <div class="header_icon Sign_up col-sx-3" id="myModal">
-                            <i class="fas fa-sign-in-alt"></i><a href="#"> log in</a>
+                            <i class="fas fa-sign-in-alt"></i><a href="#"> Login</a>
                         </div>
                     </div>
                 </div>
@@ -110,35 +125,20 @@
                                 <li data-target="#demo" data-slide-to="0" class="active"></li>
                                 <li data-target="#demo" data-slide-to="1"></li>
                                 <li data-target="#demo" data-slide-to="2"></li>
+                                <li data-target="#demo" data-slide-to="3"></li>
                             </ul>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="./img/banner1.jpg" alt="banner1" width="100%" height="400">
-                                    <!-- <div class="carousel-caption">
-                      <h3>Los Angeles</h3>
-                      <p>We had such a great time in LA!</p>
-                    </div>    -->
                                 </div>
                                 <div class="carousel-item">
                                     <img src="./img/banner2.jpg" alt="banner2" width="100%" height="400">
-                                    <!-- <div class="carousel-caption">
-                      <h3>Chicago</h3>
-                      <p>Thank you, Chicago!</p>
-                    </div>    -->
                                 </div>
                                 <div class="carousel-item">
                                     <img src="./img/banner3.jpg" alt="banner3" width="100%" height="400">
-                                    <!-- <div class="carousel-caption">
-                      <h3>New York</h3>
-                      <p>We love the Big Apple!</p>
-                    </div>    -->
                                 </div>
                                 <div class="carousel-item">
                                     <img src="./img/banner4.jpg" alt="banner4" width="100%" height="400">
-                                    <!-- <div class="carousel-caption">
-                      <h3>New York</h3>
-                      <p>We love the Big Apple!</p>
-                    </div>    -->
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -180,32 +180,69 @@
                                                 <div class="form-group">
                                                     <div class="form-checkbox">
                                                         <label for="one-way">
-                                <input type="radio" id="one-way" name="flight-type" checked>
-                                <span></span>One way
-                              </label>
+                                                            <input type="radio" id="one-way" name="flight-type" checked>
+                                                            <span></span>One way
+                                                        </label>
                                                         <label for="roundtrip">
-                                <input type="radio" id="roundtrip" name="flight-type" >
-                                <span></span>Roundtrip
-                              </label>
+                                                            <input type="radio" id="roundtrip" name="flight-type" >
+                                                            <span></span>Roundtrip
+                                                        </label>
                                                         <label for="multi-city">
-                                <input type="radio" id="multi-city" name="flight-type">
-                                <span></span>Multi-City
-                              </label>
+                                                            <input type="radio" id="multi-city" name="flight-type">
+                                                            <span></span>Multi-City
+                                                        </label>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-4">
                                                         <div class="form-group">
                                                             <span class="form-label">Flying from</span>
                                                             <input class="form-control" type="text" placeholder="City or airport">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-4">
                                                         <div class="form-group">
                                                             <span class="form-label">Flyning to</span>
                                                             <input class="form-control" type="text" placeholder="City or airport">
                                                         </div>
                                                     </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <span class="form-label">Travel class</span>
+                                                            <select class="form-control">
+                                                                <option>Economy class</option>
+                                                                <option>Business class</option>
+                                                                <option>First class</option>
+                                                                </select>
+                                                            <span class="select-arrow"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <span class="form-label">Adults (18+)</span>
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                </select>
+                                                            <span class="select-arrow"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <span class="form-label">Children (0-17)</span>
+                                                            <select class="form-control">
+                                                                <option>0</option>
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                </select>
+                                                            <span class="select-arrow"></span>
+                                                        </div>
+                                                    </div>
+                                                    
                                                     <div class="col-md-3">
                                                         <div class="form-group">
                                                             <span class="form-label">Departing</span>
@@ -218,43 +255,7 @@
                                                             <input class="form-control" type="date" required>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="row">
-
                                                     <div class="col-md-2">
-                                                        <div class="form-group">
-                                                            <span class="form-label">Adults (18+)</span>
-                                                            <select class="form-control">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                </select>
-                                                            <span class="select-arrow"></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <div class="form-group">
-                                                            <span class="form-label">Children (0-17)</span>
-                                                            <select class="form-control">
-                                  <option>0</option>
-                                  <option>1</option>
-                                  <option>2</option>
-                                </select>
-                                                            <span class="select-arrow"></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <div class="form-group">
-                                                            <span class="form-label">Travel class</span>
-                                                            <select class="form-control">
-                                  <option>Economy class</option>
-                                  <option>Business class</option>
-                                  <option>First class</option>
-                                </select>
-                                                            <span class="select-arrow"></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
                                                         <div class="form-btn">
                                                             <button class="submit-btn">Show flights</button>
                                                         </div>
@@ -275,7 +276,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 packages">
-                        <h5>OUR PACKAGES </h5>
+                        <h5>our packages </h5>
                         <!-- <span class="line5"></span> -->
                     </div>
                 </div>
@@ -330,7 +331,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 packages">
-                        <h5>OUR Offers </h5>
+                        <h5>our Offers </h5>
                         <!-- <span class="line5"></span> -->
                     </div>
                 </div>
@@ -341,18 +342,20 @@
                 <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                     <div class="gallery-cell">
                         <img src="./img/off1.jpg" alt="">
+                        <img src="./img/off2.jpg" alt="">
+                        <img src="./img/off3.jpg" alt="">
                     </div>
                     <div class="gallery-cell">
                         <img src="./img/off1.jpg" alt="">
+                        <img src="./img/off2.jpg" alt="">
+                        <img src="./img/off3.jpg" alt="">
                     </div>
                     <div class="gallery-cell">
                         <img src="./img/off1.jpg" alt="">
-                    </div>
-                    <div class="gallery-cell">
-                        <img src="./img/off1.jpg" alt="">
+                        <img src="./img/off2.jpg" alt="">
+                        <img src="./img/off3.jpg" alt="">
                     </div>
                 </div>
-
             </div>
             <br>
             <br>
@@ -519,7 +522,7 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                             <div class="copyright-text">
-                                <p>Copyright &copy; 2020, All Right Reserved <a href="https://codepen.io/anupkumar92/">Abhay</a></p>
+                                <p>Copyright &copy; 2020, All Right Reserved <a href="https://codepen.io/anupkumar92/"></a></p>
                             </div>
                         </div>
                     </div>
