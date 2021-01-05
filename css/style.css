@@ -678,7 +678,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section {
     position: relative;
-    height: 70vh;
+    height: 67vh;
 }
 
 .section .section-center {
@@ -711,15 +711,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .booking-form .form-control {
     background-color: #fff;
-    height: 50px !important;
+    height: 40px !important;
     color: #191a1e;
     border: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 40px;
-    padding: 0px 25px;
+    padding: 0px 13px;
+}
+.form-control2{
+    margin-left: 15px !important;
+}
+.form-control-date{
+    width: 164px !important;
+    padding: 0px 10px !important;
 }
 /* select.form-control:not([size]):not([multiple]) {
     height: calc(2.25rem + 2px) !important;
@@ -1049,14 +1056,14 @@ ul {
 }
 
 .copyright-area {
-    background: #202020;
+    background:white;
     padding: 25px 0;
 }
 
 .copyright-text p {
     margin: 0;
     font-size: 14px;
-    color: #878787;
+    color:#2f3e54;
 }
 
 .copyright-text p a {
