@@ -263,7 +263,12 @@ h6 {
     padding: 0;
     list-style: none;
 }
-
+/* .dropdown-menu.show {
+    display: none;
+}
+.dropdown-menu :hover {
+    display: block !important;
+} */
 .nav-menu ul {
     /* position: absolute; */
     /* display: none; */
@@ -1161,4 +1166,11 @@ img.dowloadlink {
 
 .payment_option_icon {
     font-size: 30px;
+}
+
+/* modal */
+.btn-secondary {
+    color: #fff;
+    background-color: #0c3f8a !important;
+border-color: #0c3f8a !important;
 }

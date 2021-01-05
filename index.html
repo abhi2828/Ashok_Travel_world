@@ -36,9 +36,7 @@
         
         .dropdown-menu {
             width: 42rem;
-            /* background: #9dbde6; */
-            top: 7px !important;
-            left: 239px !important;
+            top: 30px !important;
         }
     </style>
     <title>Ashok Travel World</title>
@@ -60,17 +58,17 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-5">
                         <nav id="nav-menu-container">
                             <ul class="nav-menu">
                                 <li class="menu-active"><a href="#hero"><i class="fa fa-plane" aria-hidden="true"></i> Flights</a></li>
                                 <li><a href="#about"><i class="fa fa-bed" aria-hidden="true"></i> Hotel</a></li>
-                                <li class="nav-item px-4 dropdown">
+                                <li class="nav-item px-4 dropdown Holiday">
                                     <!-- first is the link in your navbar -->
-                                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Holidays</a>
+                                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"  aria-haspopup="true" aria-expanded="false">Holidays</a>
 
                                     <!-- your mega menu starts here! -->
-                                    <div class="dropdown-menu dropdown-menu-right container" aria-labelledby="servicesDropdown">
+                                    <div class="dropdown-menu megaOption dropdown-menu-right container" aria-labelledby="servicesDropdown">
                                             <div class="row">
                                                 <ul class="col-md-3 megamenu_ul"><a href=""> Pineapple</a>                                       
                                                     <li>item1</li>
@@ -100,10 +98,13 @@
                     </div>
                     <div class="row">
                         <div class="header_icon col-sx-3" style="margin-right: 22px;float: right;">
-                            <i class="fa fa-user" style="padding-left:10px" aria-hidden="true"></i><a href="#"> Sign up</a>
+                            <i class="fa fa-user" style="padding-left:10px" aria-hidden="true"></i><a href="#"> Agent Login </a>
+                        </div>
+                        <div class="header_icon col-sx-3" style="margin-right: 22px;float: right;">
+                            <i class="fa fa-briefcase" style="padding-left:10px" aria-hidden="true"></i><a href="#">   Corporate Login</a>
                         </div>
                         <div class="header_icon Sign_up col-sx-3" id="myModal">
-                            <i class="fas fa-sign-in-alt"></i><a href="#"> Login</a>
+                            <i class="fas fa-sign-in-alt"></i><a href="#"> Sign up</a>
                         </div>
                     </div>
                 </div>
@@ -200,7 +201,7 @@
                                                             <input class="form-control" type="text" placeholder="City or airport">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-3">
+                                                    <div class="col-md-4">
                                                         <div class="form-group">
                                                             <span class="form-label">Flyning to</span>
                                                             <input class="form-control" type="text" placeholder="City or airport">
@@ -223,29 +224,41 @@
 
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <span class="form-label">Adults (18+)</span>
+                                                            <span class="form-label">Adults (12+ yrs)</span>
                                                             <select class="form-control">
                                                                 <option>1</option>
                                                                 <option>2</option>
                                                                 <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                                <option>6</option>
+                                                                <option>7</option>
+                                                                <option>8</option>
+                                                                <option>9</option>
+                                                            </select>
+                                                            <span class="select-arrow"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <span class="form-label">Children (2 - 12 yrs)</span>
+                                                            <select class="form-control">
+                                                                <option>Children</option>
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                                <option>6</option>
+                                                                <option>7</option>
+                                                                <option>8</option>
                                                                 </select>
                                                             <span class="select-arrow"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <div class="form-group">
-                                                            <span class="form-label">Children (2-17)</span>
-                                                            <select class="form-control">
-                                                                <option>0</option>
-                                                                <option>1</option>
-                                                                <option>2</option>
-                                                                </select>
-                                                            <span class="select-arrow"></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <div class="form-group">
-                                                            <span class="form-label">Infant (0-24 Month)</span>
+                                                            <span class="form-label">Infant (0 - 24 Month)</span>
                                                             <select class="form-control">
                                                                 <option>Infant</option>
                                                                 <option>1</option>
@@ -555,4 +568,62 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 
+
+
+
+    
+<script>
+  $('#exampleCheck1').on('change', function(e){
+   if(e.target.checked){
+     $('#exampleModal').modal();
+   }
+});
+</script>
+
+
+
+
+
+
+
+<script>
+    $(".dropdown-toggle").hover(function(){
+        $(".Holiday").addClass("show");
+  $(".megaOption").addClass("show");
+},function(){
+    $(".Holiday").removeClass("show");
+  $(".megaOption").removeClass("show");});
+
+  $(".dropdown-menu").hover(function(){
+  $(".Holiday").addClass("show");
+  $(".megaOption").addClass("show");},function(){
+    $(".Holiday").removeClass("show");
+  $(".megaOption").removeClass("show");});
+</script>
+
+<!-- modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+          
+        </div>
+        <div class="modal-body" style="color:#3c3f44;">
+            Applicable for serving or retired personnel of the Armed Forces or Paramilitary 
+            Forces of India and war widows only. Serving and retired personnel of 
+            the Armed or Paramilitary Forces of India, along with their respective 
+            spouses and dependent children are also eligible to avail this offer. 
+            Proof in the form of Valid Photo ID and relevant Military ID has to be 
+            presented at the time of Airline check-in counter, failing which they 
+            will be denied boarding. Limited Seats Available. T & C Apply.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </html>
+
